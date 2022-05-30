@@ -39,7 +39,7 @@ sns.set_style('white')
 
 #plotagem
 plt.figure(figsize=(12, 8))
-plt.title('Gols Esperados(xG) e saldo(xG+/-) de Ederson, em campo, no contexto das grandes ligas europeias')
+plt.title('Gols Esperados(xG) e saldo(xG+/-) do Man City quando Ederson está em campo')
 sns.scatterplot(data=df[df.Player != 'Ederson'], x='onxG', y='xG+/-', 
                 alpha=0.7, ec='white', s=90, color='lightblue')
 sns.scatterplot(data=df[df.Player == 'Ederson'], x='onxG', y='xG+/-', 
