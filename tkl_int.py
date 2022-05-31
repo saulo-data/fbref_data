@@ -33,9 +33,8 @@ sns.set_theme('notebook')
 sns.set_style('whitegrid')
 
 plt.figure(figsize=(20, 10))
-plt.title('Roubadas de Bola + Interceptações(Tkl+Int) das principais ligas europeias | Fonte: Fbref.com')
+plt.title('Roubadas de Bola + Interceptações(Tkl+Int) dos atacantes das principais ligas europeias | Fonte: Fbref.com')
 g = sns.boxplot(data=df, x='Comp', y='Tkl+Int', linewidth=3, palette='mako')
 g.set(xlabel=None)
 sns.despine()
 plt.show()
-
